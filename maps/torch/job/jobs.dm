@@ -505,7 +505,8 @@
 
 
 /datum/job/warden
-	title = "Brig Officer"
+	title = "Brig Chief"
+	hud_icon = "brigofficer"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
@@ -734,7 +735,8 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/qm
-	title = "Deck Officer"
+	title = "Deck Chief"
+	hud_icon = "deckofficer"
 	department = "Supply"
 	department_flag = SUP
 	total_positions = 1
@@ -749,9 +751,6 @@
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/ec/e7,
@@ -759,7 +758,7 @@
 		/datum/mil_rank/fleet/e8
 	)
 
-	access = list(access_maint_tunnels, access_heads, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
+	access = list(access_maint_tunnels, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
 						access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar)
 	minimal_access = list()
 
